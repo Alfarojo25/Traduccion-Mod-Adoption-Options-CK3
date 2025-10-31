@@ -1,0 +1,44 @@
+# .gitignore para mod de Crusader Kings III
+
+# Archivos del sistema Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Archivos del sistema macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Archivos de Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Archivos de logs
+*.log
+
+# Archivos compilados de Python (si usas scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Carpetas de distribución
+build/
+dist/
+*.egg-info/
+
+# Cache de CK3
+.ck3_cache/
+
+# Archivos de backup del editor
+*.orig

@@ -1,0 +1,22 @@
+﻿l_spanish:
+ AO_CONCUBINIST_FEMALE: "[concubinist_female|E]"
+ AO_CONCUBINIST_MALE: "[concubinist_male|E]"
+
+ AO_CHILDREN_HEADING: "$CHILDREN$ #weak ([Add_int32(GetDataModelSize(CharacterWindow.GetChildren), GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ao_adopted_child' ) ) ) )])#!"
+ 
+ AO_PRIMOLINEAL_MARRIAGE: "Matrimonio [ao_cc_primolineal|E]"
+ AO_ULTIMOLINEAL_MARRIAGE: "Matrimonio [ao_cc_ultimolineal|E]"
+ AO_PRIMOLINEAL_BETROTHAL: "Compromiso [ao_cc_primolineal|E]"
+ AO_ULTIMOLINEAL_BETROTHAL: "Compromiso [ao_cc_ultimolineal|E]"
+ 
+ AO_DOMINANT_OFFER: "Matrimonio [ao_cc_dominant|E] para [MatchmakerInteractionWindow.GetActorToMatch.GetUIName]"
+ AO_SUBORDINATE_OFFER: "Matrimonio [ao_cc_subordinate|E] para [MatchmakerInteractionWindow.GetActorToMatch.GetUIName]"
+ 
+ AO_MARRIAGE_ADOPTED_CHILDREN_HOUSE_ACTOR: "[MatchOffer.GetSecondaryActor.Custom('ao_MarriageAdoptedChildrenHouse')]"
+ AO_MARRIAGE_ADOPTED_CHILDREN_HOUSE_RECIPIENT: "[MatchOffer.GetSecondaryRecipient.Custom('ao_MarriageAdoptedChildrenHouse')]"
+ AO_MARRIAGE_ADOPTED_CHILDREN_HOUSE: "Los niños adoptados por esta unión serán de la [house|E] [ao_dominant_character.GetHouse.GetBaseName]"
+ AO_MARRIAGE_ADOPTED_CHILDREN_NO_HOUSE: "Los niños adoptados por esta unión no serán de ninguna [house|E]"
+ AO_SECONDARY_RECIPIENT_IS_SUBORDINATE: "[MatchOffer.GetSecondaryRecipient.GetUIName|U] será [ao_cc_subordinate|E] en el matrimonio"
+ AO_SECONDARY_RECIPIENT_IS_DOMINANT: "[MatchOffer.GetSecondaryRecipient.GetUIName|U] será [ao_cc_dominant|E] en el matrimonio"
+ 
+ AO_FIND_ADOPTION_SELECT_ADOPTEE: "# Elige a quién [adopt|E]#!"
