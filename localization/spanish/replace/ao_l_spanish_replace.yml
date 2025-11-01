@@ -1,4 +1,4 @@
-﻿﻿l_spanish:
+﻿l_spanish:
  setting_no_adoption_desc: "Todas las fes y culturas prohíben las adopciones."
  setting_default_adoption_desc: "Todas las fes comienzan con sus doctrinas de adopción predeterminadas. Para la mayoría de las fes esto es adopciones $doctrine_ao_adoption_prevalence_illegitimate_name$ $doctrine_ao_adoption_type_lowborn_child_name$."
  setting_adoption_always_allowed_name:  "#high Común#!"
