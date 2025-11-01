@@ -72,12 +72,29 @@ Para que la traduccion funcione correctamente, asegurate de que el orden de carg
 
 Si en el juego ves algo como `doctrine_ao_adoption_prevalence_illegitimate_name` en lugar del texto traducido:
 
-**Causa:** El descriptor del mod no incluia la directiva `replace_path`
+**Causa:** Estructura incorrecta de archivos de localización
 
-**Solución:** Actualiza a la version 1.0.2 o superior. Esta version incluye:
+**Solución:** Actualiza a la version **1.0.3 o superior**. Esta version corrige:
+
+1. ✅ Archivos en `localization/english/` (no spanish)
+2. ✅ Nombres: `*_english.yml` (no *_spanish.yml)
+3. ✅ Marcador: `l_english:` (no l_spanish:)
+4. ✅ `replace_path="localization/english"` en descriptor.mod
+
+**¿Por qué "english" si es traducción al español?**
+
+Porque `replace_path` reemplaza los archivos ingleses del mod original con nuestras traducciones. El juego carga `localization/english/` y encuentra nuestro español dentro.
+
+### Archivos actuales (v1.0.3):
 
 ```
-replace_path="localization/english"
+localization/english/
+├── ao_events_l_english.yml      # Contiene traducciones españolas
+├── ao_gui_l_english.yml         # l_english: con texto en español
+├── ao_common_l_english.yml      # UTF-8 con BOM
+├── ao_cc_common_l_english.yml
+├── ao_cc_gui_l_english.yml
+└── ao_ttd_common_l_english.yml
 ```
 
 Esto le indica a CK3 que debe reemplazar los archivos de localizacion en ingles con los archivos en espanol.

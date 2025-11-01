@@ -1,4 +1,4 @@
-﻿l_spanish:
+﻿l_english:
  # Custom Descriptions
 AO_CC_IS_MARRIED_SUBORDINATE: "[CHARACTER.GetFirstName] es el/la [ao_cc_subordinate_partner|E] en un matrimonio"
 AO_CC_SUBORDINATE_BETROTHAL: "[CHARACTER.GetFirstName] es el/la [ao_cc_subordinate_partner|E] en un compromiso"

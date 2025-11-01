@@ -1,5 +1,37 @@
 # Changelog - Adoption Options Spanish Translation
 
+## [1.0.3] - 2025-11-01
+
+### 🔧 Corregido
+
+- **CRITICO:** Archivos movidos de `localization/spanish/` a `localization/english/`
+- **CRITICO:** Nombres de archivos cambiados de `*_spanish.yml` a `*_english.yml`
+- **CRITICO:** Primera línea cambiada de `l_spanish:` a `l_english:`
+- Ahora los archivos reemplazan correctamente los archivos en inglés del mod original
+- Las traducciones finalmente se cargan correctamente en el juego
+
+### 📝 Explicación Técnica
+
+El problema era que CK3 busca archivos de localización por idioma del juego. Aunque `replace_path="localization/english"` estaba configurado, nuestros archivos estaban en `localization/spanish/` con nombres `*_spanish.yml` y marcador `l_spanish:`.
+
+**Solución aplicada:**
+
+1. Carpeta renombrada: `spanish/` → `english/`
+2. Archivos renombrados: `*_spanish.yml` → `*_english.yml`
+3. Marcador cambiado: `l_spanish:` → `l_english:`
+
+Ahora el mod reemplaza directamente los archivos ingleses con las traducciones españolas.
+
+### 🎮 Compatible con
+
+- Crusader Kings III version 1.18.0
+- Adoption Options version 11.8
+
+### 📝 Notas
+
+- Hotfix CRITICO - Tercera corrección necesaria
+- **Actualización OBLIGATORIA** para que funcione la traducción
+
 ## [1.0.2] - 2025-11-01
 
 ### 🔧 Corregido

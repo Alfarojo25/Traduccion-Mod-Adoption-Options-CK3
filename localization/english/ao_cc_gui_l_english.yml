@@ -1,4 +1,4 @@
-﻿l_spanish:
+﻿l_english:
 AO_CC_MARRIAGE_TOGGLE: "[GetPlayer.Custom('ao_cc_LinealToggle')]"
 AO_CC_MARRIAGE_TOGGLE_TOOLTIP: "[GetPlayer.Custom('ao_cc_LinealToggleTooltip')]"
 AO_CC_MARRIAGE_TOGGLE_SECOND: "[GetPlayer.Custom2('ao_cc_LinealToggleSecond', MatchmakerInteractionWindow.GetActorToMatch)]"

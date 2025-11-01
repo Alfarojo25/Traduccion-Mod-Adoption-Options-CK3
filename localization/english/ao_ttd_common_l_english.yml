@@ -1,4 +1,4 @@
-﻿l_spanish:
+﻿l_english:
  # Effect
 AO_TTD_JOINS_COURT: "Se une a la corte de [TARGET_CHARACTER.GetShortUINamePossessive]"
  
