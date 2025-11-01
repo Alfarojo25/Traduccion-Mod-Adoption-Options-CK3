@@ -1,0 +1,12 @@
+﻿﻿l_spanish:
+ setting_no_adoption_desc: "Todas las fes y culturas prohíben las adopciones."
+ setting_default_adoption_desc: "Todas las fes comienzan con sus doctrinas de adopción predeterminadas. Para la mayoría de las fes esto es adopciones $doctrine_ao_adoption_prevalence_illegitimate_name$ $doctrine_ao_adoption_type_lowborn_child_name$."
+ setting_adoption_always_allowed_name:  "#high Común#!"
+ setting_adoption_always_allowed_desc: "Todas las fes comienzan con adopciones $doctrine_ao_adoption_prevalence_common_name$ $doctrine_ao_adoption_type_any_younger_name$."
+ game_concept_adoption_desc: "La adopción es el acto de traer a otro [character|E] a tu [house|E] y [dynasty|E].\n\nLos personajes [adult|E] solo pueden adoptar personajes más jóvenes que no tengan hijos, sus hijos sean plebeyos, o sus hijos sean de tu [house|E]. Los personajes solo pueden adoptar a sus propios hijos si ellos y su [spouse|E] están adoptando al hijo de una [concubine|E]. Las parejas de sexo opuesto que adoptan a un personaje [lowborn|E] como su nuevo [primary_heir|E] pierden [legitimacy|E]. Los personajes [lowborn|E] [GetTrait('ao_adopted').GetName(GetNullCharacter)] ganan temporalmente [GetModifier('ao_originally_lowborn_modifier').GetNameWithTooltip]. Pueden aplicarse más restricciones dependiendo de las [doctrines|E] de adopción de la [faith|E] de un personaje. Si la [culture|E] de un personaje tiene una [tradition|E] que habilita las adopciones, entonces prevalece la más laxa."
+ any_ancestor_culture_was_mystical: "Al menos una cultura ancestral debe tener la [tradition|E] $tradition_mystical_ancestors_name$ o $tradition_ao_ritual_succession$."
+ tradition_roman_legacy_name: "Legado Romano"
+ culture_parameter_allows_noble_family_adoption: "Los [house_heads|E] de [noble_family|E] [administrative|E] pueden usar la [interaction|E] #V $noble_family_adoption_interaction$#! con adultos"
+ culture_parameter_allows_adoption: "Sin restricciones de [fertility|E] o [ao_preferred_gender|E] al [adopting|E]"
+ doctrine_parameter_piety_from_marrying_lowborn_active: "Los gobernantes ganan [piety|E] y no pierden [legitimacy|E] al [marrying|E] o [adopting|E] [characters|E] [lowborn|E]\n$EFFECT_LIST_BULLET$Los seguidores [lowborn|E] [GetTrait('ao_adopted').GetName(GetNullCharacter)] ganan temporalmente [GetModifier('ao_communal_originally_lowborn_modifier').GetNameWithTooltip]"
+ adopt_interaction: "$ao_arrange_adoption_interaction$"
