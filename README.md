@@ -66,6 +66,28 @@ Para que la traduccion funcione correctamente, asegurate de que el orden de carg
 1. Adoption Options (mod original)
 2. Adoption Options - Spanish Translation (este mod)
 
+## ⚠️ SOLUCION DE PROBLEMAS
+
+### ¿Ves claves de texto en lugar de traducciones?
+
+Si en el juego ves algo como `doctrine_ao_adoption_prevalence_illegitimate_name` en lugar del texto traducido:
+
+**Causa:** El descriptor del mod no incluia la directiva `replace_path`
+
+**Solución:** Actualiza a la version 1.0.2 o superior. Esta version incluye:
+
+```
+replace_path="localization/english"
+```
+
+Esto le indica a CK3 que debe reemplazar los archivos de localizacion en ingles con los archivos en espanol.
+
+### Otros problemas comunes
+
+- **Asegurate de cargar este mod DESPUES del mod original**
+- **Verifica que ambos mods esten activos en el launcher**
+- **Reinicia el juego completamente** despues de activar/actualizar los mods
+
 ## Contribuir
 
 Si encuentras errores de traduccion o quieres mejorarla:

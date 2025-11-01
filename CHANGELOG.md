@@ -1,5 +1,23 @@
 # Changelog - Adoption Options Spanish Translation
 
+## [1.0.2] - 2025-11-01
+
+### 🔧 Corregido
+
+- **CRITICO:** Agregado `replace_path="localization/english"` al descriptor.mod
+- Las traducciones ahora se cargan correctamente en el juego
+- Las doctrinas de fe reformadas ahora muestran texto en español en vez de las claves de localización
+
+### 🎮 Compatible con
+
+- Crusader Kings III version 1.18.0
+- Adoption Options version 11.8
+
+### 📝 Notas
+
+- Version de hotfix CRITICA
+- **Recomendado actualizar inmediatamente** si ves claves de texto en lugar de traducciones
+
 ## [1.0.1] - 2025-11-01
 
 ### 🔧 Corregido
