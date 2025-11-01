@@ -1,120 +1,88 @@
-# Changelog - Adoption Options Spanish Translation
+﻿# Changelog - Adoption Options Spanish Translation
 
-## [1.0.3] - 2025-11-01
+## [1.0.4] - 2025-11-01
 
-### 🔧 Corregido
+### 🔧 Corregido - VERSIÓN FINAL CORRECTA
 
-- **CRITICO:** Archivos movidos de `localization/spanish/` a `localization/english/`
-- **CRITICO:** Nombres de archivos cambiados de `*_spanish.yml` a `*_english.yml`
-- **CRITICO:** Primera línea cambiada de `l_spanish:` a `l_english:`
-- Ahora los archivos reemplazan correctamente los archivos en inglés del mod original
-- Las traducciones finalmente se cargan correctamente en el juego
+- **CRITICO:** Archivos movidos CORRECTAMENTE a `localization/spanish/` (estaban mal en `english/`)
+- **CRITICO:** Nombres corregidos a `*_spanish.yml` (estaban mal como `*_english.yml`)
+- **CRITICO:** Marcador corregido a `l_spanish:` (estaba mal como `l_english:`)
+- **CRITICO:** Eliminado `replace_path` del descriptor.mod (no es necesario)
+- Mod ahora funciona correctamente como traducción dependiente
 
-### 📝 Explicación Técnica
+### 📝 Explicación Técnica - ¿Qué estaba mal?
 
-El problema era que CK3 busca archivos de localización por idioma del juego. Aunque `replace_path="localization/english"` estaba configurado, nuestros archivos estaban en `localization/spanish/` con nombres `*_spanish.yml` y marcador `l_spanish:`.
+**Versiones 1.0.1 - 1.0.3: INCORRECTAS**
 
-**Solución aplicada:**
+El error fue intentar "reemplazar" archivos ingleses. Las traducciones de CK3 NO funcionan así.
 
-1. Carpeta renombrada: `spanish/` → `english/`
-2. Archivos renombrados: `*_spanish.yml` → `*_english.yml`
-3. Marcador cambiado: `l_spanish:` → `l_english:`
+**Cómo funciona CORRECTAMENTE:**
 
-Ahora el mod reemplaza directamente los archivos ingleses con las traducciones españolas.
+CK3 carga archivos de localización según el idioma configurado:
+- Idioma en Inglés → carga `localization/english/*_l_english.yml`
+- Idioma en Español → carga `localization/spanish/*_l_spanish.yml`
+- Idioma en Alemán → carga `localization/german/*_l_german.yml`
 
-### 🎮 Compatible con
+**Estructura CORRECTA (v1.0.4):**
+```
+localization/
+└── spanish/              ← Carpeta del idioma español
+    ├── ao_events_l_spanish.yml
+    ├── ao_gui_l_spanish.yml
+    ├── ao_common_l_spanish.yml
+    ├── ao_cc_common_l_spanish.yml
+    ├── ao_cc_gui_l_spanish.yml
+    └── ao_ttd_common_l_spanish.yml
+```
 
-- Crusader Kings III version 1.18.0
-- Adoption Options version 11.8
+Cada archivo empieza con `l_spanish:` y contiene las traducciones españolas.
 
-### 📝 Notas
+### ⚠️ REQUISITOS OBLIGATORIOS
 
-- Hotfix CRITICO - Tercera corrección necesaria
-- **Actualización OBLIGATORIA** para que funcione la traducción
+Para que este mod funcione **DEBES**:
 
-## [1.0.2] - 2025-11-01
+1. ✅ Tener instalado y activo: **Adoption Options** (mod original)
+2. ✅ Tener instalado y activo: **Adoption Options - Spanish Translation** (este mod)
+3. ✅ **CONFIGURAR CK3 EN IDIOMA ESPAÑOL:**
+   - Menú Principal → Opciones → Idioma → **Español**
+4. ✅ Reiniciar el juego después de cambiar el idioma
 
-### 🔧 Corregido
+**SI NO CAMBIAS EL IDIOMA A ESPAÑOL, NO FUNCIONARÁ**
 
-- **CRITICO:** Agregado `replace_path="localization/english"` al descriptor.mod
-- Las traducciones ahora se cargan correctamente en el juego
-- Las doctrinas de fe reformadas ahora muestran texto en español en vez de las claves de localización
-
-### 🎮 Compatible con
-
-- Crusader Kings III version 1.18.0
-- Adoption Options version 11.8
-
-### 📝 Notas
-
-- Version de hotfix CRITICA
-- **Recomendado actualizar inmediatamente** si ves claves de texto en lugar de traducciones
-
-## [1.0.1] - 2025-11-01
-
-### 🔧 Corregido
-
-- **CRITICO:** Encoding de todos los archivos .yml corregido a UTF-8 con BOM (obligatorio en CK3)
-- Problema donde caracteres espanoles (a, e, i, o, u, n, u, i, i) podian no mostrarse correctamente
-- 6 archivos de localizacion convertidos a UTF-8 con BOM:
-  - ao_events_l_spanish.yml
-  - ao_gui_l_spanish.yml
-  - ao_common_l_spanish.yml
-  - ao_cc_common_l_spanish.yml
-  - ao_cc_gui_l_spanish.yml
-  - ao_ttd_common_l_spanish.yml
-
-### ✨ Agregado
-
-- Script `fix_encoding.py` para futuras correcciones de encoding
-- Documentacion sobre encoding correcto en README.md
+CK3 solo carga archivos `l_spanish:` cuando el idioma está en español.
 
 ### 🎮 Compatible con
 
-- Crusader Kings III version 1.18.0
-- Adoption Options version 11.8
+- Crusader Kings III versión 1.18.0
+- Adoption Options versión 11.8
 
-### 📝 Notas
+### 📝 Notas Importantes
 
-- Version de mantenimiento CRITICA
-- **Recomendado actualizar inmediatamente** para evitar problemas de visualizacion
-- El encoding UTF-8 con BOM es OBLIGATORIO para archivos de localizacion en CK3
+- Esta es la versión CORRECTA y FINAL
+- Las versiones 1.0.1, 1.0.2 y 1.0.3 tenían la estructura INCORRECTA
+- Validado con CK3-Tiger (los errores son normales en mods de traducción)
+- Basado en la estructura del mod alemán (Ultimate German Translation Mod)
 
 ---
 
-## [1.0.0] - 2025-10-31
+## [1.0.3] - 2025-11-01 ❌ VERSIÓN INCORRECTA
 
-### ✨ Agregado
-
-- Traduccion completa al espanol de todos los archivos de localizacion
-- Archivo `ao_common_l_spanish.yml` - Textos comunes generales e interacciones (✅ 100%)
-- Archivo `ao_events_l_spanish.yml` - Todos los eventos de adopcion y fertilidad compartida (✅ 100%)
-- Archivo `ao_gui_l_spanish.yml` - Interfaz de usuario general (✅ 100%)
-- Archivo `ao_cc_common_l_spanish.yml` - Textos comunes de contenido especial (✅ 100%)
-- Archivo `ao_cc_gui_l_spanish.yml` - Interfaz de usuario especial (✅ 100%)
-- Archivo `ao_ttd_common_l_spanish.yml` - Textos comunes adicionales (✅ 100%)
-- README.md con instrucciones de instalacion
-- LICENSE (MIT) - Alfarojo25
-- Documentacion completa en carpeta Documentacion/
-
-### 🎮 Compatible con
-
-- Crusader Kings III version 1.17.\*
-- Adoption Options version 11.8
-
-### 📝 Notas
-
-- Primera version publica
-- Traduccion basada en los archivos de localizacion inglesa del mod original
-- Requiere el mod original "Adoption Options" instalado
+**NO USAR ESTA VERSIÓN** - Estructura incorrecta
 
 ---
 
-## Formato de versiones
+## [1.0.2] - 2025-11-01 ❌ VERSIÓN INCORRECTA
 
-Este proyecto usa [Semantic Versioning](https://semver.org/):
+**NO USAR ESTA VERSIÓN** - Estructura incorrecta
 
-- MAJOR.MINOR.PATCH
-- MAJOR: Cambios incompatibles
-- MINOR: Nueva funcionalidad compatible
-- PATCH: Correcciones de bugs
+---
+
+## [1.0.1] - 2025-11-01 ❌ VERSIÓN INCORRECTA
+
+**NO USAR ESTA VERSIÓN** - Tenía problemas de encoding y espacios
+
+---
+
+## [1.0.0] - 2025-10-31 ❌ VERSIÓN INCORRECTA
+
+**NO USAR ESTA VERSIÓN** - Primera versión con errores

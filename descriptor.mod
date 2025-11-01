@@ -1,4 +1,4 @@
-version="1.0.3"
+version="1.0.4"
 tags={
 	"Translation"
 	"Localisation"
@@ -9,4 +9,3 @@ supported_version="1.18.*"
 dependencies={
 	"Adoption Options"
 }
-replace_path="localization/english"
