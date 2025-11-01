@@ -1,29 +1,61 @@
 # Changelog - Adoption Options Spanish Translation
 
+## [1.0.1] - 2025-11-01
+
+### 🔧 Corregido
+
+- **CRITICO:** Encoding de todos los archivos .yml corregido a UTF-8 con BOM (obligatorio en CK3)
+- Problema donde caracteres espanoles (a, e, i, o, u, n, u, i, i) podian no mostrarse correctamente
+- 6 archivos de localizacion convertidos a UTF-8 con BOM:
+  - ao_events_l_spanish.yml
+  - ao_gui_l_spanish.yml
+  - ao_common_l_spanish.yml
+  - ao_cc_common_l_spanish.yml
+  - ao_cc_gui_l_spanish.yml
+  - ao_ttd_common_l_spanish.yml
+
+### ✨ Agregado
+
+- Script `fix_encoding.py` para futuras correcciones de encoding
+- Documentacion sobre encoding correcto en README.md
+
+### 🎮 Compatible con
+
+- Crusader Kings III version 1.18.0
+- Adoption Options version 11.8
+
+### 📝 Notas
+
+- Version de mantenimiento CRITICA
+- **Recomendado actualizar inmediatamente** para evitar problemas de visualizacion
+- El encoding UTF-8 con BOM es OBLIGATORIO para archivos de localizacion en CK3
+
+---
+
 ## [1.0.0] - 2025-10-31
 
 ### ✨ Agregado
 
-- Traducción completa al español de todos los archivos de localización
+- Traduccion completa al espanol de todos los archivos de localizacion
 - Archivo `ao_common_l_spanish.yml` - Textos comunes generales e interacciones (✅ 100%)
-- Archivo `ao_events_l_spanish.yml` - Todos los eventos de adopción y fertilidad compartida (✅ 100%)
+- Archivo `ao_events_l_spanish.yml` - Todos los eventos de adopcion y fertilidad compartida (✅ 100%)
 - Archivo `ao_gui_l_spanish.yml` - Interfaz de usuario general (✅ 100%)
 - Archivo `ao_cc_common_l_spanish.yml` - Textos comunes de contenido especial (✅ 100%)
 - Archivo `ao_cc_gui_l_spanish.yml` - Interfaz de usuario especial (✅ 100%)
 - Archivo `ao_ttd_common_l_spanish.yml` - Textos comunes adicionales (✅ 100%)
-- README.md con instrucciones de instalación
+- README.md con instrucciones de instalacion
 - LICENSE (MIT) - Alfarojo25
-- Documentación completa en carpeta Documentacion/
+- Documentacion completa en carpeta Documentacion/
 
 ### 🎮 Compatible con
 
-- Crusader Kings III versión 1.17.\*
-- Adoption Options versión 11.8
+- Crusader Kings III version 1.17.\*
+- Adoption Options version 11.8
 
 ### 📝 Notas
 
-- Primera versión pública
-- Traducción basada en los archivos de localización inglesa del mod original
+- Primera version publica
+- Traduccion basada en los archivos de localizacion inglesa del mod original
 - Requiere el mod original "Adoption Options" instalado
 
 ---

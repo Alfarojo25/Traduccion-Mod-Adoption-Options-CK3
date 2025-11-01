@@ -1,6 +1,6 @@
 ﻿l_spanish:
  # Effect
- AO_TTD_JOINS_COURT: "Se une a la corte de [TARGET_CHARACTER.GetShortUINamePossessive]"
+AO_TTD_JOINS_COURT: "Se une a la corte de [TARGET_CHARACTER.GetShortUINamePossessive]"
  
  # Trigger
- AO_TTD_IS_BUSY_MOVING_TO_A_NEW_COURT: "[CHARACTER.GetShortUIName|U] está ocupado/a mudándose a una nueva corte"
+AO_TTD_IS_BUSY_MOVING_TO_A_NEW_COURT: "[CHARACTER.GetShortUIName|U] está ocupado/a mudándose a una nueva corte"

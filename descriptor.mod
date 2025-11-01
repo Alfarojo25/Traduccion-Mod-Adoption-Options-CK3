@@ -1,11 +1,11 @@
-version="1.0"
+version="1.0.1"
 tags={
 	"Translation"
 	"Localisation"
 }
 name="Adoption Options - Spanish Translation"
 picture="thumbnail.png"
-supported_version="1.17.*"
+supported_version="1.18.*"
 dependencies={
 	"Adoption Options"
 }

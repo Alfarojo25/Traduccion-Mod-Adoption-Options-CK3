@@ -1,53 +1,80 @@
-# Adoption Options - Traducción al Español
+# Adoption Options - Traduccion al Espanol
 
-## Descripción
+## Descripcion
 
-Traducción completa al español del mod **Adoption Options** para Crusader Kings III.
+Traduccion completa al espanol del mod **Adoption Options** para Crusader Kings III.
 
 ## Requisitos
 
-- Crusader Kings III versión 1.17.\* o superior
+- Crusader Kings III version 1.18.0 o superior
 - Mod original: [Adoption Options](https://steamcommunity.com/sharedfiles/filedetails/?id=2816662627)
 
-## Instalación
+## Instalacion
 
 ### Steam Workshop
 
-1. Suscríbete a este mod en Steam Workshop
-2. Asegúrate de tener instalado el mod original "Adoption Options"
+1. Suscribete a este mod en Steam Workshop
+2. Asegurate de tener instalado el mod original "Adoption Options"
 3. Activa ambos mods en el launcher del juego
-4. **Importante**: Este mod debe cargarse DESPUÉS del mod original
+4. **Importante**: Este mod debe cargarse DESPUES del mod original
 
-### Instalación Manual
+### Instalacion Manual
 
 1. Descarga el mod desde GitHub
 2. Copia la carpeta en: `Documents/Paradox Interactive/Crusader Kings III/mod/`
-3. Asegúrate de tener instalado el mod original
+3. Asegurate de tener instalado el mod original
 4. Activa ambos mods en el launcher
 
-## Características
+## Caracteristicas
 
-- ✅ Traducción completa de todos los eventos
-- ✅ Traducción de la interfaz de usuario
-- ✅ Traducción de decisiones e interacciones
+- ✅ Traduccion completa de todos los eventos
+- ✅ Traduccion de la interfaz de usuario
+- ✅ Traduccion de decisiones e interacciones
+- ✅ **CORREGIDO:** Encoding UTF-8 con BOM (OBLIGATORIO para CK3)
 - ✅ Mantiene compatibilidad con actualizaciones del mod original
+
+## Encoding CORREGIDO (Importante)
+
+**Fecha:** 1 de noviembre de 2025
+
+Todos los archivos de localizacion (.yml) ahora usan **UTF-8 con BOM**, que es el encoding OBLIGATORIO para archivos de localizacion en CK3.
+
+**Problema anterior:**
+
+- Los archivos podian tener encoding incorrecto
+- Caracteres espanoles (a, e, i, o, u, n, u, i, i) podian no mostrarse bien en el juego
+
+**Solucion aplicada:**
+
+- Todos los archivos .yml convertidos a UTF-8 con BOM
+- Script `fix_encoding.py` incluido para futuras correcciones
+- 6 archivos corregidos exitosamente
+
+**Archivos corregidos:**
+
+- ao_events_l_spanish.yml
+- ao_gui_l_spanish.yml
+- ao_common_l_spanish.yml
+- ao_cc_common_l_spanish.yml
+- ao_cc_gui_l_spanish.yml
+- ao_ttd_common_l_spanish.yml
 
 ## Orden de Carga
 
-Para que la traducción funcione correctamente, asegúrate de que el orden de carga sea:
+Para que la traduccion funcione correctamente, asegurate de que el orden de carga sea:
 
 1. Adoption Options (mod original)
 2. Adoption Options - Spanish Translation (este mod)
 
 ## Contribuir
 
-Si encuentras errores de traducción o quieres mejorarla:
+Si encuentras errores de traduccion o quieres mejorarla:
 
 1. Reporta issues en GitHub
-2. Envía pull requests con correcciones
+2. Envia pull requests con correcciones
 3. Todas las contribuciones son bienvenidas
 
-## Créditos
+## Creditos
 
 - **Mod Original**: Adoption Options
 - **Traducción**: Alfarojo25
